@@ -1,4 +1,17 @@
 body{
     background-color: rgb(172, 12, 92);
+}
+
+.ins_info{
+    color: rgb(207, 11, 149);
+}
+
+.ins_info input,
+.ins_info select,
+.ins_info button{
+    border-color: rgb(207, 11, 149);
+}
+
+.ins_info button{
     color: rgb(207, 11, 149);
 }
