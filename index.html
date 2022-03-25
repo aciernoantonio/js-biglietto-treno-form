@@ -12,12 +12,35 @@
   </head>
   <body>
 
-    <input type="text" id="full_name" value="">
+    
 
-    <h1 id="result"></h1>
+    <form>
+
+        <label for="full_name" class="form-label">Nome e Cognome</label>
+        <input type="text" id="full_name" class="form-control" value="">
+
+        <label for="km" class="form-label">Km da percorrere</label>
+        <input type="text" id="km" class="form-control" value="">
+
+        <label for="age" class="form-label">Fascia d'età</label>
+        <select id="age" class="form-select">
+
+            <option value="Minorenne">Minorenne</option>
+            <option value="Over65">Over 65</option>
+            <option value="Maggiorenne">Non rientro in queste categorie</option>
+
+        </select>
+
+    </form>
+
+    <button id="test" onclick="myFunction()" class="btn btn-light mt-5">invia</button>
+
+
+    <h1 id="selected_name"></h1>
+    <h1 id="selected_km"></h1>
+    <h1 id="selected_age"></h1>
     
     
-    <button id="test" onclick="myFunction()" class="mt-5">invia</button>
 
     <script src="./assets/js/main.js"></script>
 
