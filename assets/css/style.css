@@ -15,3 +15,7 @@ body{
 .ins_info button{
     color: rgb(207, 11, 149);
 }
+
+.bg_name{
+    background-color: lightgray;
+}
