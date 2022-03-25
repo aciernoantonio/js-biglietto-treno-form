@@ -9,28 +9,27 @@ function myFunction() {
 
     let cp = document.getElementById("cp").innerHTML = Math.floor(Math.random() * 100000) +10000;
 
-}
-
-//display carrozza
-
-
-
-
-//costo per km e calcolo prezzo
-const km_price = 0.21;
-const ticket_price = km * km_price;
-
-//formule di sconto
-const minors_discount = ticket_price - (ticket_price * 20 / 100);
-const over_discount = ticket_price - (ticket_price * 40 / 100);
-
-if (age === `Minorenne`) {
-    minors_discount;
+    let km = document.getElementById("km").value;
     
-} else if (age === `Sconto Over 65`) {
-    over_discount;
+    //costo per km e calcolo prezzo
+    const km_price = 0.21;
+    let ticket_price = km * km_price;
+    
+    //formule di sconto
+    const minors_discount = ticket_price - (ticket_price * 20 / 100);
+    const over_discount = ticket_price - (ticket_price * 40 / 100);
+    
+    if (age === `Minorenne`) {
+        ticket_price = minors_discount;
+        
+    } else if (age === `Over 65`) {
+        ticket_price = over_discount;
+    
+    } else if (age === `Nessuno`) {
+        ticket_price = ticket_price;
+    }
 
-} else if (age === `Nessuno`) {
-    ticket_price;
+    document.getElementById("ticket_price").innerHTML = `${ticket_price.toFixed(2)} &euro;`;
 }
+
 
