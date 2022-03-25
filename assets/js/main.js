@@ -7,6 +7,8 @@ function myFunction() {
 
     let n_carrozza = document.getElementById("n_carrozza").innerHTML = Math.floor(Math.random() * 10) +1;
 
+    let cp = document.getElementById("cp").innerHTML = Math.floor(Math.random() * 100000) +10000;
+
 }
 
 //display carrozza
